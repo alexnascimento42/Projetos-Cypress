@@ -9,14 +9,14 @@ Given("acesso ao sistema", () => {
     SaucemoPage.acessarSistema();
 })
 
-When("incluo usuario e senha", () => {
-    SaucemoPage.credenciaisSistema();
+When("incluo usuario e senha invalidos", () => {
+    SaucemoPage.credenciaisSistemaInvalida();
 })
 
 And("clico no botão login", () => {
     SaucemoPage.btnAcesso();
 })
 
-Then("acesso a pagina inicial", () => {
-    SaucemoPage.acessoTelaInicial();
+Then("será informada uma mensagem de erro", () => {
+    SaucemoPage.msgErroSistema();
 })

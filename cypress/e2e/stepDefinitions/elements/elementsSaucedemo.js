@@ -14,7 +14,21 @@ const saucElements = {
 
     CORFIMACAO: {
         CONFIRMAACESSO: '.app_logo'
+    },
+
+    MENSAGEMERROACESSO: {
+        MSGERRO: '[data-test="error"]'
+    },
+
+    FILTROS: {
+        SELECIONATIPOFILTRO: '[data-test="product-sort-container"]'
+    },
+
+    CONFIRMAFILTRO: {
+        FILTROZTOA: '[data-test="item-3-title-link"] > [data-test="inventory-item-name"]',
+        FILTROATOZ: '[data-test="item-4-title-link"]'
     }
+
 
 }
 
