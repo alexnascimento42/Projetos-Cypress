@@ -44,6 +44,27 @@ class saucemoPage {
     confirmaOrdemAz(){
         cy.get(saucElements.CONFIRMAFILTRO.FILTROATOZ).should('contain','Sauce Labs Backpack');
     }
+
+    SelecionoOrdemPrMenor(){
+        cy.get(saucElements.FILTROS.SELECIONATIPOFILTRO).select('Price (low to high)');
+
+    }
+
+    confirmaPrecoMenor(){
+        cy.get(saucElements.CONFIRMAPRECO.FILTROMENOR).should('contain','$7.99');
+    }
+
+    SelecionoOrdemPrMaior(){
+        cy.get(saucElements.FILTROS.SELECIONATIPOFILTRO).select('Price (high to low)');
+
+    }
+
+    confirmaPrecoMaior(){
+        cy.get(saucElements.CONFIRMAPRECO.CONFIRMAMAIOR).should('contain','$49.99');
+    }
+
+
+    
 }
 
 export default saucemoPage;

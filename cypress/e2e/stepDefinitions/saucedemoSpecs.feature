@@ -14,9 +14,16 @@ Feature: Loja Saucedemo
         And clico no botão login
         Then será informada uma mensagem de erro
 
-    Scenario: ordenar produtos por preco
+    Scenario: ordenar produtos por ordem alfabetica
         Given realizo o acesso ao sistema
         When seleciono para ordenar por nome Z to A
         Then os produtos são exibidos em ordem alfabética pelo nome
 		When seleciono para ordenar por nome A to Z
         Then os produtos são exibidos em ordem alfabética pelo nome
+
+    Scenario: ordenar produtos por preco
+        Given realizo o acesso ao sistema
+        When seleciono para ordenar por menor preço
+        Then os produtos são exibidos em ordem crescente de preço
+		When seleciono para ordenar por maior preço
+        Then os produtos são exibidos em ordem decrescente de preço

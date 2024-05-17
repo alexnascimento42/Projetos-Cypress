@@ -27,7 +27,14 @@ const saucElements = {
     CONFIRMAFILTRO: {
         FILTROZTOA: '[data-test="item-3-title-link"] > [data-test="inventory-item-name"]',
         FILTROATOZ: '[data-test="item-4-title-link"]'
+    },
+
+    CONFIRMAPRECO: {
+        FILTROMENOR: ':nth-child(1) > [data-test="inventory-item-description"] > .pricebar > [data-test="inventory-item-price"]',
+        CONFIRMAMAIOR: ':nth-child(1) > [data-test="inventory-item-description"] > .pricebar > [data-test="inventory-item-price"]'
     }
+
+
 
 
 }
