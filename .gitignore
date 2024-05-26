@@ -1,0 +1,16 @@
+# Arquivos gerados pelo Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Diretório de cache do Cypress
+/.cache/
+
+# Arquivos de configuração do Cypress que podem conter credenciais sensíveis
+/cypress.env.json
+
+# Dependências do npm
+/node_modules/
+
+# Arquivos de compilação ou construção (se aplicável)
+/build/
+/dist/
