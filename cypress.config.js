@@ -5,7 +5,7 @@ module.exports = defineConfig({
   e2e: {
     //specPattern: ["*/.feature", "cypress/integration/*/.cy{js,jsx,ts,tsx}"],
     chromeWebSecurity: false,
-    baseUrl: 'https://saucedemo.com/',
+
     setupNodeEvents(on, config){
       on('file:preprocessor', cucumber());
       return config;
