@@ -1,9 +1,9 @@
 import saucElements from "../elements/elementsSaucedemo";
+import { URLs } from "../elements/urls";
 
 class saucemoPage {
-
     acessarSistema() {
-        cy.visit(saucElements.SITE.ACESSARSITE);
+        cy.visit(URLs.SITE_A);
     }
 
     credenciaisSistema() {

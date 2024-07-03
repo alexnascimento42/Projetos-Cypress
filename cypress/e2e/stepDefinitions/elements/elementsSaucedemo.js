@@ -1,8 +1,4 @@
 const saucElements = {
-    SITE: {
-        ACESSARSITE: '/'
-    },
-
     ACESSO: {
         USUARIO: 'input[name= "user-name"]',
         SENHA: 'input[name= "password"]'

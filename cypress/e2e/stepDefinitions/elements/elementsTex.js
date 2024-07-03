@@ -1,10 +1,4 @@
 const cadElements = {
-
-    ACESSO: {
-        ACESSOSITE: '/',
-        VALIDACAOSITE: 'small'
-    },
-
     CADASTRO: {
         CAMPONOME: '#_tex_nome',
         CAMPOSOBRENOME: '#_tex_sobrenome',
