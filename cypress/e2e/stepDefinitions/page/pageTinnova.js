@@ -7,12 +7,12 @@ class PageCadastro {
         cy.visit(URLs.SITE_C);
     }
 
-    validaSite(){
-        cy.get(TiElements.TELAINICIAL.VALIDACAOTELA).should('contain','Boa sorte, e divirta-se no processo, isso é uma experiência. aproveite ao máximo');
+    validaSite() {
+        cy.get(TiElements.TELAINICIAL.VALIDACAOTELA).should('contain', 'Boa sorte, e divirta-se no processo, isso é uma experiência. aproveite ao máximo');
     }
 
-    clicarBotaoCadastro(){
-        cy.get(TiElements.TELAINICIAL.BOTAOTELAINICIAL).click({force: true});
+    clicarBotaoCadastro() {
+        cy.get(TiElements.TELAINICIAL.BOTAOTELAINICIAL).click({ force: true });
     }
 
     btnAdicionar() {
@@ -37,12 +37,29 @@ class PageCadastro {
         cy.get(TiElements.CADASTRO.BOTAOGUARDAR).click({ force: true });
     }
 
-    msgErroCadastro(){
-        cy.get(TiElements.MENSAGEMERROCADASTRO.MENSAGEMERRO).should('contain','Todos os campos devem ser preenchidos');
+    msgErroCadastro() {
+        cy.get(TiElements.MENSAGEMERROCADASTRO.MENSAGEMERRO).should('contain', 'Todos os campos devem ser preenchidos');
     }
 
-    btnErroCadastro(){
+    btnErroCadastro() {
         cy.get(TiElements.MENSAGEMERROCADASTRO.BOTAOERRO).click();
+    }
+
+    dadosImcompletos() {
+        cy.get(TiElements.DADOSCADASTRO.NOME).type('123456789');
+        cy.get(TiElements.DADOSCADASTRO.EMAIL).type('abcdefghstfd');
+    }
+
+    btnConsulta() {
+        cy.get(TiElements.CONSULTA.BOTAOCONSULTAR).click();
+    }
+
+    btnVoltar() {
+        cy.get(TiElements.CONSULTA.BOTAOVOLTAR).click();
+    }
+
+    confirmaTelaInicio() {
+        cy.get('img[src="https://tinnova.com.br/wp-content/uploads/2021/05/logo_dark.png"]').should('be.visible')
     }
 
 }

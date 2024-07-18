@@ -19,6 +19,11 @@ const TiElements = {
     MENSAGEMERROCADASTRO: {
         MENSAGEMERRO: '.swal-text',
         BOTAOERRO: '.swal-button'
+    },
+
+    CONSULTA: {
+        BOTAOCONSULTAR: ':nth-child(1) > [style="width: 15%; justify-content: flex-start;"] > :nth-child(2)',
+        BOTAOVOLTAR: '.sc-bczRLJ'
     }
 
 }
