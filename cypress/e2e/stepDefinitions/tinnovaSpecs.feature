@@ -33,3 +33,10 @@ Feature: Sistema de cadastro tinnova
         When clico no botão de consulta
         And clico no botão voltar
         Then retorno para a tela inicial
+
+    Scenario: Edição cadastrado
+        Given estou na tela de cadastro
+        When clico no botão para alterar
+        And realizo a alteração
+        And clico no botão atualizar
+        Then retorno para a tela inicial
