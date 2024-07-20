@@ -62,6 +62,19 @@ class PageCadastro {
         cy.get('img[src="https://tinnova.com.br/wp-content/uploads/2021/05/logo_dark.png"]').should('be.visible')
     }
 
+    btnAlterar() {
+        cy.get(TiElements.ALTERACAO.BOTAOALTERAR).click();
+    }
+    
+    alteracaoNome(){
+        cy.get(TiElements.ALTERACAO.ALTERACAONOME).type('Antonio José');
+    }
+
+    btnAtualizar(){
+        cy.get(TiElements.ALTERACAO.BOTAOATUALIZAR).click();
+    }
+
+
 }
 
 export default PageCadastro;

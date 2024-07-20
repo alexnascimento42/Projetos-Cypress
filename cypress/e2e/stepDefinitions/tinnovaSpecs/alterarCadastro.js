@@ -11,15 +11,15 @@ Given("estou na tela de cadastro", () => {
 })
 
 When("clico no botão para alterar", () => {
-    cy.get(':nth-child(1) > [style="width: 15%; justify-content: flex-start;"] > :nth-child(3)').click();
+    pageCadastro.btnAlterar();
 })
 
 And("realizo a alteração", () => {
-    cy.get(':nth-child(2) > .sc-iqcoie').type('Antonio José');
+    pageCadastro.alteracaoNome();
 })
 
 And("clico no botão atualizar", () => {
-    cy.get('.sc-bczRLJ').click();
+    pageCadastro.btnAtualizar();
 })
 
 Then("retorno para a tela inicial", () => {
